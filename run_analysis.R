@@ -68,19 +68,11 @@ xx<-rbind(xx1,xx2,xx3,xx4,xx5,xx6,xx7,xx8,xx9)
 dataset2<-melt(xx, id.vars = c("subject","measurement"),variable.name = "activity", 
                value.name = "average")
 
+if(!file.exists("dataset")){dir.create("dataset")}
 write.csv(dataset1, file=paste("dataset/","dataset1",".txt",sep=""))
 write.csv(dataset2, file=paste("dataset/","dataset2",".txt",sep=""))
 
 ## the end
-##commands to see the datasets
-str(dataset1)
-dataset1
-
-str(dataset2)
-head(dataset2)
-tail(dataset2)
-
-xxx<-read.csv("dataset/dataset1.txt")
 
 
 
