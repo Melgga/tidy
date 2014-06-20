@@ -48,7 +48,7 @@ Indicates the corresponding activity of the measurements.
 
 #### average 
 
-Provides the mean of the measurement for the subject and activity of the corresponding file.
+Provides the mean of the measurement for the subject and activity of the corresponding row.
 
 ### Source
 
